@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39AB26F92933572EDC87136FB6A128AD /* UIViewController+MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = B4547E5A973DE5B834B92BD2D935C73E /* UIViewController+MMDrawerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A48A08B3A3531230D54F398FADB18A1 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = B479AE4ADA41FBF0A9260DAC0364E8DC /* MMDrawerVisualState.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7D18984473F6E10EF09232A3DA6745F4 /* MMDrawerController+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = A338AC47F22B0B336167C86B2AFFFB73 /* MMDrawerController+Subclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DC4E343B048206692EF96B42F98CA6B /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA6D9F00C07D5FE3E80A48C4A3E53A1 /* MMDrawerBarButtonItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		999F543CD75AF90671F015D41D40A8E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
+		A1A217BEC95999B773C51C532D19BF9A /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5ED63D6563399C90D852DF5F87FE0A /* MMDrawerController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A4809216FD9DEFE2ED5797983E7499CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
+		AA0251C21913E03E33FABE1F0A04F934 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D4F99C3C546A985BFDB91451111B7F /* UIViewController+MMDrawerController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C8135D3D90D6901E1BB314F96D05DFF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
+		CC1FA78F9025640B26D5EE393F03CD5B /* MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = AEB655E07D382BA862B805B32B298552 /* MMDrawerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1C8CE7F3D4CE3414C85C28C37938AAA /* Pods-SmartLockTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED361C846015E07E7ED9D0603FB6FAC0 /* Pods-SmartLockTests-dummy.m */; };
+		D4A4355DB626BDE30F2C917AAB4E21B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
+		D77389120E74211C48A13FB25271B11C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */; };
+		E0431A7873D78FD00198C9236054A364 /* Pods-SmartLockUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6492563C2718CAD0AEB2DF0CB62167CD /* Pods-SmartLockUITests-dummy.m */; };
+		EA32A0D05EE28DA9CA7E9E24BEF2135E /* MMDrawerBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EAA9C0AEA3530FF5404C08FB4C00049 /* MMDrawerBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F04FB7CC6732BF3F167D86DA7DD08B3A /* MMDrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC3628453F022006AE799937547F35 /* MMDrawerController-dummy.m */; };
+		F2625B5D43189FE34FFA111D68414F42 /* MMDrawerVisualState.h in Headers */ = {isa = PBXBuildFile; fileRef = EBC90583CDDB3997947ED5A673CB14A1 /* MMDrawerVisualState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE1A73E477DAE9B12BB880FE643BD157 /* Pods-SmartLock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E540D523C739744ADC583A76FA99F /* Pods-SmartLock-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CB509B356D8F4E8A8BB5A92610CFA38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78D29FDDA61F65D7244C402E10584DB5;
+			remoteInfo = MMDrawerController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		038843A0551AB9447341DF54F9D878E3 /* libPods-SmartLock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SmartLock.a"; path = "libPods-SmartLock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D27552741E4E95D33F063855C482E0 /* Pods-SmartLock-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartLock-resources.sh"; sourceTree = "<group>"; };
+		0A4AA9AD14B47A9AD4421FBB25B7B75B /* Pods-SmartLock-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartLock-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0EAA9C0AEA3530FF5404C08FB4C00049 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = MMDrawerController/MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		12F39575FD21FBA06E6C8E27DAEE99DA /* Pods-SmartLockUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartLockUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		29D4F99C3C546A985BFDB91451111B7F /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MMDrawerController.m"; path = "MMDrawerController/UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		2D7CCF47F35F26BAA5705397A22EA425 /* Pods-SmartLock-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartLock-acknowledgements.plist"; sourceTree = "<group>"; };
+		31ABD40DA0CF2F048881D04217CE9F9F /* Pods-SmartLock-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartLock-frameworks.sh"; sourceTree = "<group>"; };
+		38E9AFE054BE106B92E1E0A6D5B3BCEC /* Pods-SmartLock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartLock.debug.xcconfig"; sourceTree = "<group>"; };
+		3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3CA6D9F00C07D5FE3E80A48C4A3E53A1 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = MMDrawerController/MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		3E5ED63D6563399C90D852DF5F87FE0A /* MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerController.m; path = MMDrawerController/MMDrawerController.m; sourceTree = "<group>"; };
+		443F0D0A9F94C3EAD996E3EE4470E1BF /* Pods-SmartLockUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartLockUITests-resources.sh"; sourceTree = "<group>"; };
+		463A8E70DD0FF3661A9BB394877F1EA3 /* Pods-SmartLock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartLock.release.xcconfig"; sourceTree = "<group>"; };
+		517E540D523C739744ADC583A76FA99F /* Pods-SmartLock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartLock-dummy.m"; sourceTree = "<group>"; };
+		522BCC45F2DCC9FCAC8AAEAF54F62980 /* Pods-SmartLockTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartLockTests-frameworks.sh"; sourceTree = "<group>"; };
+		5AEC3628453F022006AE799937547F35 /* MMDrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMDrawerController-dummy.m"; sourceTree = "<group>"; };
+		6492563C2718CAD0AEB2DF0CB62167CD /* Pods-SmartLockUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartLockUITests-dummy.m"; sourceTree = "<group>"; };
+		72ACCF9A6D6FD9DE7F83B7733E2C7981 /* Pods-SmartLockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartLockTests.release.xcconfig"; sourceTree = "<group>"; };
+		78CD68EAD9EA7F3C56CFCCF3BF036C18 /* Pods-SmartLockUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartLockUITests.release.xcconfig"; sourceTree = "<group>"; };
+		802573DD838B648322772D5E2C6F9846 /* Pods-SmartLockTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartLockTests-resources.sh"; sourceTree = "<group>"; };
+		83065186BEE332FEADA4CF2505C36ECF /* libPods-SmartLockTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SmartLockTests.a"; path = "libPods-SmartLockTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D61CE707789F98B6E87984A4877199D /* Pods-SmartLockUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartLockUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97893F34E4C2EF58BA3DC0A12933656A /* Pods-SmartLockUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartLockUITests-frameworks.sh"; sourceTree = "<group>"; };
+		A338AC47F22B0B336167C86B2AFFFB73 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MMDrawerController+Subclass.h"; path = "MMDrawerController/MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		A346FEBE3316E1D44238869991A7B78F /* Pods-SmartLockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartLockTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEB655E07D382BA862B805B32B298552 /* MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = MMDrawerController/MMDrawerController.h; sourceTree = "<group>"; };
+		B4547E5A973DE5B834B92BD2D935C73E /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MMDrawerController.h"; path = "MMDrawerController/UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		B479AE4ADA41FBF0A9260DAC0364E8DC /* MMDrawerVisualState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerVisualState.m; path = MMDrawerController/MMDrawerVisualState.m; sourceTree = "<group>"; };
+		B986E5E2C43FA7147AF930A78A65BC10 /* libMMDrawerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMMDrawerController.a; path = libMMDrawerController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		BADE7638AB0DD11734F44F0B09122CED /* MMDrawerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMDrawerController.xcconfig; sourceTree = "<group>"; };
+		C39E39A740B92D48000E78E7177785C5 /* Pods-SmartLockUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartLockUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CA961A48E323F1559D76173C20F10610 /* Pods-SmartLockTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartLockTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DD29ABD9F17332C1FBA255DA5EDF66BB /* MMDrawerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController-prefix.pch"; sourceTree = "<group>"; };
+		E7A8CCAF2C04A68D266D206A0A4ABBB9 /* Pods-SmartLockTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartLockTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EBC90583CDDB3997947ED5A673CB14A1 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerVisualState.h; path = MMDrawerController/MMDrawerVisualState.h; sourceTree = "<group>"; };
+		ED361C846015E07E7ED9D0603FB6FAC0 /* Pods-SmartLockTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartLockTests-dummy.m"; sourceTree = "<group>"; };
+		F3C803FDA6A0D4A14246BADE39ED896C /* libPods-SmartLockUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SmartLockUITests.a"; path = "libPods-SmartLockUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C9663D19EEE92721C2C154C8AC75839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999F543CD75AF90671F015D41D40A8E6 /* Foundation.framework in Frameworks */,
+				D77389120E74211C48A13FB25271B11C /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC77CE73426E4FEC81B8413115F6EF31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A4355DB626BDE30F2C917AAB4E21B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1B9F0E5E98796D72B8F138F27DFDD96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4809216FD9DEFE2ED5797983E7499CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51E3DEA357FD9375080217B92EE281E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8135D3D90D6901E1BB314F96D05DFF2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E741648FB8612CCB6E3DDBE8DE477B7 /* MMDrawerVisualStates */ = {
+			isa = PBXGroup;
+			children = (
+				EBC90583CDDB3997947ED5A673CB14A1 /* MMDrawerVisualState.h */,
+				B479AE4ADA41FBF0A9260DAC0364E8DC /* MMDrawerVisualState.m */,
+			);
+			name = MMDrawerVisualStates;
+			sourceTree = "<group>";
+		};
+		188B896382982B07CCD5903DBE442EF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE69FAB2745B6AB86A130D684BE6AA77 /* MMDrawerController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		249A6CD4680738A7E389F539DFED5BA6 /* Pods-SmartLock */ = {
+			isa = PBXGroup;
+			children = (
+				0A4AA9AD14B47A9AD4421FBB25B7B75B /* Pods-SmartLock-acknowledgements.markdown */,
+				2D7CCF47F35F26BAA5705397A22EA425 /* Pods-SmartLock-acknowledgements.plist */,
+				517E540D523C739744ADC583A76FA99F /* Pods-SmartLock-dummy.m */,
+				31ABD40DA0CF2F048881D04217CE9F9F /* Pods-SmartLock-frameworks.sh */,
+				09D27552741E4E95D33F063855C482E0 /* Pods-SmartLock-resources.sh */,
+				38E9AFE054BE106B92E1E0A6D5B3BCEC /* Pods-SmartLock.debug.xcconfig */,
+				463A8E70DD0FF3661A9BB394877F1EA3 /* Pods-SmartLock.release.xcconfig */,
+			);
+			name = "Pods-SmartLock";
+			path = "Target Support Files/Pods-SmartLock";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7AB6F27FF3606F9360547F8F1977A63 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FE1DA7C789AF52A7CEF3A758B6A6485 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AEB655E07D382BA862B805B32B298552 /* MMDrawerController.h */,
+				3E5ED63D6563399C90D852DF5F87FE0A /* MMDrawerController.m */,
+				A338AC47F22B0B336167C86B2AFFFB73 /* MMDrawerController+Subclass.h */,
+				B4547E5A973DE5B834B92BD2D935C73E /* UIViewController+MMDrawerController.h */,
+				29D4F99C3C546A985BFDB91451111B7F /* UIViewController+MMDrawerController.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		511CBEC606D0FE9013638A488BBC30BE /* Pods-SmartLockTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA961A48E323F1559D76173C20F10610 /* Pods-SmartLockTests-acknowledgements.markdown */,
+				E7A8CCAF2C04A68D266D206A0A4ABBB9 /* Pods-SmartLockTests-acknowledgements.plist */,
+				ED361C846015E07E7ED9D0603FB6FAC0 /* Pods-SmartLockTests-dummy.m */,
+				522BCC45F2DCC9FCAC8AAEAF54F62980 /* Pods-SmartLockTests-frameworks.sh */,
+				802573DD838B648322772D5E2C6F9846 /* Pods-SmartLockTests-resources.sh */,
+				A346FEBE3316E1D44238869991A7B78F /* Pods-SmartLockTests.debug.xcconfig */,
+				72ACCF9A6D6FD9DE7F83B7733E2C7981 /* Pods-SmartLockTests.release.xcconfig */,
+			);
+			name = "Pods-SmartLockTests";
+			path = "Target Support Files/Pods-SmartLockTests";
+			sourceTree = "<group>";
+		};
+		56107E86798D3EBBD707D2370E74288E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BADE7638AB0DD11734F44F0B09122CED /* MMDrawerController.xcconfig */,
+				5AEC3628453F022006AE799937547F35 /* MMDrawerController-dummy.m */,
+				DD29ABD9F17332C1FBA255DA5EDF66BB /* MMDrawerController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MMDrawerController";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				188B896382982B07CCD5903DBE442EF7 /* Pods */,
+				C1BCD5C354B4C65B90D8056C48D21826 /* Products */,
+				9DB5929AE92118072B888CB46311C151 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9DB5929AE92118072B888CB46311C151 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				249A6CD4680738A7E389F539DFED5BA6 /* Pods-SmartLock */,
+				511CBEC606D0FE9013638A488BBC30BE /* Pods-SmartLockTests */,
+				B225CAE56034C0ED9289170F347951B2 /* Pods-SmartLockUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B225CAE56034C0ED9289170F347951B2 /* Pods-SmartLockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D61CE707789F98B6E87984A4877199D /* Pods-SmartLockUITests-acknowledgements.markdown */,
+				C39E39A740B92D48000E78E7177785C5 /* Pods-SmartLockUITests-acknowledgements.plist */,
+				6492563C2718CAD0AEB2DF0CB62167CD /* Pods-SmartLockUITests-dummy.m */,
+				97893F34E4C2EF58BA3DC0A12933656A /* Pods-SmartLockUITests-frameworks.sh */,
+				443F0D0A9F94C3EAD996E3EE4470E1BF /* Pods-SmartLockUITests-resources.sh */,
+				12F39575FD21FBA06E6C8E27DAEE99DA /* Pods-SmartLockUITests.debug.xcconfig */,
+				78CD68EAD9EA7F3C56CFCCF3BF036C18 /* Pods-SmartLockUITests.release.xcconfig */,
+			);
+			name = "Pods-SmartLockUITests";
+			path = "Target Support Files/Pods-SmartLockUITests";
+			sourceTree = "<group>";
+		};
+		C04FB0E9695C479D1D1DF0CAA2FC15CC /* MMDrawerBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				0EAA9C0AEA3530FF5404C08FB4C00049 /* MMDrawerBarButtonItem.h */,
+				3CA6D9F00C07D5FE3E80A48C4A3E53A1 /* MMDrawerBarButtonItem.m */,
+			);
+			name = MMDrawerBarButtonItem;
+			sourceTree = "<group>";
+		};
+		C1BCD5C354B4C65B90D8056C48D21826 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B986E5E2C43FA7147AF930A78A65BC10 /* libMMDrawerController.a */,
+				038843A0551AB9447341DF54F9D878E3 /* libPods-SmartLock.a */,
+				83065186BEE332FEADA4CF2505C36ECF /* libPods-SmartLockTests.a */,
+				F3C803FDA6A0D4A14246BADE39ED896C /* libPods-SmartLockUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7AB6F27FF3606F9360547F8F1977A63 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */,
+				BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DE69FAB2745B6AB86A130D684BE6AA77 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				4FE1DA7C789AF52A7CEF3A758B6A6485 /* Core */,
+				C04FB0E9695C479D1D1DF0CAA2FC15CC /* MMDrawerBarButtonItem */,
+				0E741648FB8612CCB6E3DDBE8DE477B7 /* MMDrawerVisualStates */,
+				FF083E601C20D7706780D71D5C3ECDC1 /* Subclass */,
+				56107E86798D3EBBD707D2370E74288E /* Support Files */,
+			);
+			name = MMDrawerController;
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		FF083E601C20D7706780D71D5C3ECDC1 /* Subclass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Subclass;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CC69C2580B09E0F911A0E3FFE670F945 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA32A0D05EE28DA9CA7E9E24BEF2135E /* MMDrawerBarButtonItem.h in Headers */,
+				7D18984473F6E10EF09232A3DA6745F4 /* MMDrawerController+Subclass.h in Headers */,
+				CC1FA78F9025640B26D5EE393F03CD5B /* MMDrawerController.h in Headers */,
+				F2625B5D43189FE34FFA111D68414F42 /* MMDrawerVisualState.h in Headers */,
+				39AB26F92933572EDC87136FB6A128AD /* UIViewController+MMDrawerController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2F66559680EF3CF6F5C203C325A54CFB /* Pods-SmartLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BCA866727AEABF97540B474C409F57F /* Build configuration list for PBXNativeTarget "Pods-SmartLock" */;
+			buildPhases = (
+				0A011DCC00309CB9D7F3E680B09F19D8 /* Sources */,
+				D1B9F0E5E98796D72B8F138F27DFDD96 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D372225D75DF1FB6A54B10779BD7F5F /* PBXTargetDependency */,
+			);
+			name = "Pods-SmartLock";
+			productName = "Pods-SmartLock";
+			productReference = 038843A0551AB9447341DF54F9D878E3 /* libPods-SmartLock.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		402997B048636C0B1A6615472626771B /* Pods-SmartLockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D137CC7B941AF5DCE3854FBF98C8B6 /* Build configuration list for PBXNativeTarget "Pods-SmartLockUITests" */;
+			buildPhases = (
+				464F28EDD373A046B9FE110121A13DB7 /* Sources */,
+				D51E3DEA357FD9375080217B92EE281E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SmartLockUITests";
+			productName = "Pods-SmartLockUITests";
+			productReference = F3C803FDA6A0D4A14246BADE39ED896C /* libPods-SmartLockUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6ECD9B85D6A5BD19E10B627FDFD614C6 /* Pods-SmartLockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6637EF93A831D87289608EBA3D4A92A0 /* Build configuration list for PBXNativeTarget "Pods-SmartLockTests" */;
+			buildPhases = (
+				ADE7448C666F362CD3A870E474FE38DF /* Sources */,
+				BC77CE73426E4FEC81B8413115F6EF31 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SmartLockTests";
+			productName = "Pods-SmartLockTests";
+			productReference = 83065186BEE332FEADA4CF2505C36ECF /* libPods-SmartLockTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		78D29FDDA61F65D7244C402E10584DB5 /* MMDrawerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D879430EE2B868846ABCB49CD6E0652 /* Build configuration list for PBXNativeTarget "MMDrawerController" */;
+			buildPhases = (
+				CC334887182477966BA8839000DBF30F /* Sources */,
+				8C9663D19EEE92721C2C154C8AC75839 /* Frameworks */,
+				CC69C2580B09E0F911A0E3FFE670F945 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMDrawerController;
+			productName = MMDrawerController;
+			productReference = B986E5E2C43FA7147AF930A78A65BC10 /* libMMDrawerController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C1BCD5C354B4C65B90D8056C48D21826 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78D29FDDA61F65D7244C402E10584DB5 /* MMDrawerController */,
+				2F66559680EF3CF6F5C203C325A54CFB /* Pods-SmartLock */,
+				6ECD9B85D6A5BD19E10B627FDFD614C6 /* Pods-SmartLockTests */,
+				402997B048636C0B1A6615472626771B /* Pods-SmartLockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A011DCC00309CB9D7F3E680B09F19D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE1A73E477DAE9B12BB880FE643BD157 /* Pods-SmartLock-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		464F28EDD373A046B9FE110121A13DB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0431A7873D78FD00198C9236054A364 /* Pods-SmartLockUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE7448C666F362CD3A870E474FE38DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1C8CE7F3D4CE3414C85C28C37938AAA /* Pods-SmartLockTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC334887182477966BA8839000DBF30F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC4E343B048206692EF96B42F98CA6B /* MMDrawerBarButtonItem.m in Sources */,
+				F04FB7CC6732BF3F167D86DA7DD08B3A /* MMDrawerController-dummy.m in Sources */,
+				A1A217BEC95999B773C51C532D19BF9A /* MMDrawerController.m in Sources */,
+				5A48A08B3A3531230D54F398FADB18A1 /* MMDrawerVisualState.m in Sources */,
+				AA0251C21913E03E33FABE1F0A04F934 /* UIViewController+MMDrawerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D372225D75DF1FB6A54B10779BD7F5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMDrawerController;
+			target = 78D29FDDA61F65D7244C402E10584DB5 /* MMDrawerController */;
+			targetProxy = 9CB509B356D8F4E8A8BB5A92610CFA38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1531C132FAAAE47AAA2A515CC31AA527 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72ACCF9A6D6FD9DE7F83B7733E2C7981 /* Pods-SmartLockTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3BC8276DF04BFC2D874EF8BB4AF14382 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BADE7638AB0DD11734F44F0B09122CED /* MMDrawerController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMDrawerController/MMDrawerController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		521BE00B3901297EAA6BB1A5F9C74533 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38E9AFE054BE106B92E1E0A6D5B3BCEC /* Pods-SmartLock.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E00CCC312F8D1FEFCA3F165D033F1CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A346FEBE3316E1D44238869991A7B78F /* Pods-SmartLockTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9B080BEEB0F1A8DBEB35DAF4E4AC34E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 463A8E70DD0FF3661A9BB394877F1EA3 /* Pods-SmartLock.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C7C20393F9BD5EF1E0CF25E9B08DAD2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BADE7638AB0DD11734F44F0B09122CED /* MMDrawerController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMDrawerController/MMDrawerController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D5623BA88DCC3065F413D36A3C946F23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78CD68EAD9EA7F3C56CFCCF3BF036C18 /* Pods-SmartLockUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FE97DC7BE7F99BED379B8F7A6797CB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12F39575FD21FBA06E6C8E27DAEE99DA /* Pods-SmartLockUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59D137CC7B941AF5DCE3854FBF98C8B6 /* Build configuration list for PBXNativeTarget "Pods-SmartLockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE97DC7BE7F99BED379B8F7A6797CB45 /* Debug */,
+				D5623BA88DCC3065F413D36A3C946F23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6637EF93A831D87289608EBA3D4A92A0 /* Build configuration list for PBXNativeTarget "Pods-SmartLockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E00CCC312F8D1FEFCA3F165D033F1CB /* Debug */,
+				1531C132FAAAE47AAA2A515CC31AA527 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BCA866727AEABF97540B474C409F57F /* Build configuration list for PBXNativeTarget "Pods-SmartLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521BE00B3901297EAA6BB1A5F9C74533 /* Debug */,
+				9B080BEEB0F1A8DBEB35DAF4E4AC34E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D879430EE2B868846ABCB49CD6E0652 /* Build configuration list for PBXNativeTarget "MMDrawerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC8276DF04BFC2D874EF8BB4AF14382 /* Debug */,
+				C7C20393F9BD5EF1E0CF25E9B08DAD2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
