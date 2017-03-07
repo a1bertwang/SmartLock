@@ -7,13 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CommonCrypto/CommonCryptor.h>
 
+NS_ASSUME_NONNULL_BEGIN
 @interface Tools : NSObject
 
-+ (void)voicePrompts:(nonnull NSString *)promptString;
++ (void)voicePrompts:(NSString *)promptString;
++ (NSString *)cryptUseDES:(NSString *)context key:(NSString *)key operation:(CCOperation)operation;
 
 @end
+NS_ASSUME_NONNULL_END
 
 @interface A1bertBase64 : NSObject
+
 +(int)char2Int:(char)c;
 @end

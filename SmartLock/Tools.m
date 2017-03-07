@@ -29,47 +29,50 @@
     }
 }
 
-/*
- //---------------------------DES加密-------------------------------------//
- func DES(context:[UInt8],mishi:[UInt8],len:UInt8) -> [UInt8] {
 
- var des_keys:[UInt8] = mishi
- var des_in:[UInt8] = context
- //print(des_in)
- var maincmd = Array<UInt8>(count:des_in.count,repeatedValue:0)
- var dest_len:UInt8 = 0
+/**
+ DES加密/解密方法
 
- des_encode_var(&des_keys, &maincmd, &dest_len, &des_in, len)
-
- return maincmd
-
- }
- //---------------------------DES加密end-------------------------------------//
- //---------------------------DES解密----------------------------------------//
- func DESOUT(context:[UInt8],mishi:[UInt8],len:UInt8) -> [UInt8] {
-
- var des_keys:[UInt8] = mishi
- //print(des_keys)
- var des_in:[UInt8] = context
- //print(des_in)
- var maincmd = Array<UInt8>(count:des_in.count,repeatedValue:0)
- var dest_len:UInt8 = 0
-
- des_uncode_var(&des_keys, &maincmd, &dest_len, &des_in, len)
-
- return maincmd
-
- }
- //---------------------------DES解密end-------------------------------------//
+ @param context 加解密字符串
+ @param key key字符串
+ @param operation 加密/解密
+ @return 加解密后的字符串
  */
++ (NSString *)cryptUseDES:(NSString *)context key:(NSString *)key operation:(CCOperation)operation {
+    NSData *contextData = nil;
+    switch (operation) {
+        case kCCEncrypt: {
+            contextData = [context dataUsingEncoding:NSASCIIStringEncoding];
+        }
+            break;
+        case kCCDecrypt: {
+            contextData = [[NSData alloc] initWithBase64EncodedString:context options:NSDataBase64DecodingIgnoreUnknownCharacters];
+        }
+            break;
+    }
 
-+ (NSString *)encryptUseDES:(NSString *)context
-                       key:(NSString *)key
-                    length:(NSInteger)length {
-//    const char *desKeyCString = [key UTF8String];
-//    const char *desContextCString = [context UTF8String];
-//    unsigned char *resultCString = malloc(sizeof(char) * length);
-//    des_encode((unsigned)desKeyCString, (unsigned)desContextCString, (unsigned)resultCString);
+    size_t dataOutAvailable = contextData.length + kCCKeySizeDES;
+    void *dataOut = malloc(dataOutAvailable);
+    size_t dataOutMoved = 0;
+    CCCryptorStatus status = CCCrypt(operation, kCCAlgorithmDES, kCCOptionPKCS7Padding, key.UTF8String, kCCKeySizeDES, NULL, contextData.bytes, contextData.length, dataOut, dataOutAvailable, &dataOutMoved);
+
+    if (status == kCCSuccess) {
+        switch (operation) {
+            case kCCEncrypt: {
+                contextData = [NSData dataWithBytes:dataOut length:dataOutMoved];
+                free(dataOut);
+                return [contextData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
+            }
+                break;
+            case kCCDecrypt: {
+                contextData = [NSData dataWithBytes:dataOut length:dataOutMoved];
+                free(dataOut);
+                return [[NSString alloc] initWithData:contextData encoding:NSUTF8StringEncoding];
+            }
+                break;
+        }
+    }
+
     return nil;
 }
 

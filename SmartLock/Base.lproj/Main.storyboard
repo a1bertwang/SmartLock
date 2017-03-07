@@ -45,7 +45,7 @@
         <!--pageTwo-->
         <scene sceneID="dec-Yw-LHV">
             <objects>
-                <viewController id="WB9-tn-yKy" sceneMemberID="viewController">
+                <viewController id="WB9-tn-yKy" customClass="PBBePeriheralViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8g1-tE-fBk"/>
                         <viewControllerLayoutGuide type="bottom" id="k2k-5c-JQm"/>
@@ -64,7 +64,7 @@
         <!--pageOne-->
         <scene sceneID="rg6-rh-MdX">
             <objects>
-                <viewController id="9f4-im-rwx" sceneMemberID="viewController">
+                <viewController id="9f4-im-rwx" customClass="PBBeCentralViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dL8-1S-d6e"/>
                         <viewControllerLayoutGuide type="bottom" id="FT7-qw-NnL"/>

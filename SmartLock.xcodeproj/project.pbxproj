@@ -16,6 +16,8 @@
 		5248FB021E6511C100F56042 /* SmartLockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5248FB011E6511C100F56042 /* SmartLockTests.m */; };
 		5248FB0D1E6511C100F56042 /* SmartLockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5248FB0C1E6511C100F56042 /* SmartLockUITests.m */; };
 		525FA3FD1E66B9FF00F639C0 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 525FA3FC1E66B9FF00F639C0 /* Tools.m */; };
+		52E22A871E6E8A6100C636FE /* PBBeCentralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E22A861E6E8A6100C636FE /* PBBeCentralViewController.m */; };
+		52E22A8A1E6E8A8400C636FE /* PBBePeriheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E22A891E6E8A8400C636FE /* PBBePeriheralViewController.m */; };
 		579A880531ECDDDABF54BB47 /* libPods-SmartLockUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4AE1E50BD1878BDCA86DAC /* libPods-SmartLockUITests.a */; };
 		62238027E38B7A9B23FF0842 /* libPods-SmartLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4C00FEC93F38B424C4B9B4 /* libPods-SmartLock.a */; };
 		D6377BB42392C3410E5108BD /* libPods-SmartLockTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C4AEE73524D76C9A4CADAF /* libPods-SmartLockTests.a */; };
@@ -59,6 +61,10 @@
 		5248FB0E1E6511C100F56042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		525FA3FB1E66B9FF00F639C0 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		525FA3FC1E66B9FF00F639C0 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		52E22A851E6E8A6100C636FE /* PBBeCentralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBeCentralViewController.h; sourceTree = "<group>"; };
+		52E22A861E6E8A6100C636FE /* PBBeCentralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBeCentralViewController.m; sourceTree = "<group>"; };
+		52E22A881E6E8A8400C636FE /* PBBePeriheralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBePeriheralViewController.h; sourceTree = "<group>"; };
+		52E22A891E6E8A8400C636FE /* PBBePeriheralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBePeriheralViewController.m; sourceTree = "<group>"; };
 		5A79DA3E125755F71CCB95FA /* Pods-SmartLockUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartLockUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartLockUITests/Pods-SmartLockUITests.release.xcconfig"; sourceTree = "<group>"; };
 		77785A01B6977804566E5D2D /* Pods-SmartLock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartLock.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartLock/Pods-SmartLock.release.xcconfig"; sourceTree = "<group>"; };
 		77C4AEE73524D76C9A4CADAF /* libPods-SmartLockTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartLockTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +131,10 @@
 				5248FAEB1E6511C100F56042 /* AppDelegate.m */,
 				5248FAED1E6511C100F56042 /* ViewController.h */,
 				5248FAEE1E6511C100F56042 /* ViewController.m */,
+				52E22A851E6E8A6100C636FE /* PBBeCentralViewController.h */,
+				52E22A861E6E8A6100C636FE /* PBBeCentralViewController.m */,
+				52E22A881E6E8A8400C636FE /* PBBePeriheralViewController.h */,
+				52E22A891E6E8A8400C636FE /* PBBePeriheralViewController.m */,
 				5248FAF01E6511C100F56042 /* Main.storyboard */,
 				5248FAF31E6511C100F56042 /* Assets.xcassets */,
 				5248FAF51E6511C100F56042 /* LaunchScreen.storyboard */,
@@ -256,6 +266,7 @@
 		5248FADC1E6511C100F56042 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PB;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = PlumBlossom;
 				TargetAttributes = {
@@ -470,6 +481,8 @@
 				5248FAEC1E6511C100F56042 /* AppDelegate.m in Sources */,
 				5248FAE91E6511C100F56042 /* main.m in Sources */,
 				525FA3FD1E66B9FF00F639C0 /* Tools.m in Sources */,
+				52E22A8A1E6E8A8400C636FE /* PBBePeriheralViewController.m in Sources */,
+				52E22A871E6E8A6100C636FE /* PBBeCentralViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
