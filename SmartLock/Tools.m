@@ -7,7 +7,6 @@
 //
 
 #import "Tools.h"
-//#import "Des.h"
 #import <AVFoundation/AVFoundation.h>
 
 @implementation Tools

@@ -16,7 +16,6 @@
 		5248FB021E6511C100F56042 /* SmartLockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5248FB011E6511C100F56042 /* SmartLockTests.m */; };
 		5248FB0D1E6511C100F56042 /* SmartLockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5248FB0C1E6511C100F56042 /* SmartLockUITests.m */; };
 		525FA3FD1E66B9FF00F639C0 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 525FA3FC1E66B9FF00F639C0 /* Tools.m */; };
-		525FA4031E66BE2A00F639C0 /* Des.c in Sources */ = {isa = PBXBuildFile; fileRef = 525FA4011E66BE2A00F639C0 /* Des.c */; };
 		579A880531ECDDDABF54BB47 /* libPods-SmartLockUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4AE1E50BD1878BDCA86DAC /* libPods-SmartLockUITests.a */; };
 		62238027E38B7A9B23FF0842 /* libPods-SmartLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4C00FEC93F38B424C4B9B4 /* libPods-SmartLock.a */; };
 		D6377BB42392C3410E5108BD /* libPods-SmartLockTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C4AEE73524D76C9A4CADAF /* libPods-SmartLockTests.a */; };
@@ -60,8 +59,6 @@
 		5248FB0E1E6511C100F56042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		525FA3FB1E66B9FF00F639C0 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		525FA3FC1E66B9FF00F639C0 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
-		525FA4011E66BE2A00F639C0 /* Des.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Des.c; sourceTree = "<group>"; };
-		525FA4021E66BE2A00F639C0 /* Des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Des.h; sourceTree = "<group>"; };
 		5A79DA3E125755F71CCB95FA /* Pods-SmartLockUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartLockUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartLockUITests/Pods-SmartLockUITests.release.xcconfig"; sourceTree = "<group>"; };
 		77785A01B6977804566E5D2D /* Pods-SmartLock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartLock.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartLock/Pods-SmartLock.release.xcconfig"; sourceTree = "<group>"; };
 		77C4AEE73524D76C9A4CADAF /* libPods-SmartLockTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartLockTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,8 +132,6 @@
 				5248FAE71E6511C100F56042 /* Supporting Files */,
 				525FA3FB1E66B9FF00F639C0 /* Tools.h */,
 				525FA3FC1E66B9FF00F639C0 /* Tools.m */,
-				525FA4011E66BE2A00F639C0 /* Des.c */,
-				525FA4021E66BE2A00F639C0 /* Des.h */,
 			);
 			path = SmartLock;
 			sourceTree = "<group>";
@@ -472,7 +467,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5248FAEF1E6511C100F56042 /* ViewController.m in Sources */,
-				525FA4031E66BE2A00F639C0 /* Des.c in Sources */,
 				5248FAEC1E6511C100F56042 /* AppDelegate.m in Sources */,
 				5248FAE91E6511C100F56042 /* main.m in Sources */,
 				525FA3FD1E66B9FF00F639C0 /* Tools.m in Sources */,
