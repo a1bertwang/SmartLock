@@ -61,6 +61,8 @@
 		5248FB0E1E6511C100F56042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		525FA3FB1E66B9FF00F639C0 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		525FA3FC1E66B9FF00F639C0 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		5282F50C1E70FD09007BD23D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5282F50D1E70FD3B007BD23D /* PBPrivateFuncation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBPrivateFuncation.h; sourceTree = "<group>"; };
 		52E22A851E6E8A6100C636FE /* PBBeCentralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBeCentralViewController.h; sourceTree = "<group>"; };
 		52E22A861E6E8A6100C636FE /* PBBeCentralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBeCentralViewController.m; sourceTree = "<group>"; };
 		52E22A881E6E8A8400C636FE /* PBBePeriheralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBePeriheralViewController.h; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				5248FAE71E6511C100F56042 /* Supporting Files */,
 				525FA3FB1E66B9FF00F639C0 /* Tools.h */,
 				525FA3FC1E66B9FF00F639C0 /* Tools.m */,
+				5282F50D1E70FD3B007BD23D /* PBPrivateFuncation.h */,
 			);
 			path = SmartLock;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				5248FAE81E6511C100F56042 /* main.m */,
+				5282F50C1E70FD09007BD23D /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -631,10 +635,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AMV8T4XNVC;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SmartLock/PrefixHeader.pch";
 				INFOPLIST_FILE = SmartLock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PlumBlossom.SmartLock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -644,10 +652,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AMV8T4XNVC;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SmartLock/PrefixHeader.pch";
 				INFOPLIST_FILE = SmartLock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PlumBlossom.SmartLock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -33,92 +33,93 @@
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central {
     switch (central.state) {
         case CBManagerStatePoweredOn: {
+            PBLog(@">>>>>>>>CBManagerStatePoweredOn");
             [central scanForPeripheralsWithServices:nil options:nil];
         }
             break;
 
         case CBManagerStatePoweredOff:
-            NSLog(@">>>>>>>CBManagerStatePoweredOff");
+            PBLog(@">>>>>>>CBManagerStatePoweredOff");
             break;
 
         case CBManagerStateResetting:
-            NSLog(@">>>>>>>CBManagerStateResetting");
+            PBLog(@">>>>>>>CBManagerStateResetting");
             break;
 
         case CBManagerStateUnsupported:
-            NSLog(@">>>>>>>CBManagerStateUnsupported");
+            PBLog(@">>>>>>>CBManagerStateUnsupported");
             break;
 
         case CBManagerStateUnknown:
-            NSLog(@">>>>>>>CBManagerStateUnknown");
+            PBLog(@">>>>>>>CBManagerStateUnknown");
             break;
 
         case CBManagerStateUnauthorized:
-            NSLog(@">>>>>>>CBManagerStateUnauthorized");
+            PBLog(@">>>>>>>CBManagerStateUnauthorized");
             break;
     }
 }
 
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *,id> *)advertisementData RSSI:(NSNumber *)RSSI {
-    NSLog(@"%@", peripheral.name);
-    if ([peripheral.name hasPrefix:@"SDTT"]) {
+    PBLog(@"%@", peripheral.name);
+//    if ([peripheral.name hasPrefix:@"SDTT"]) {
         [_discoverPeripherals addObject:peripheral];
         [central connectPeripheral:peripheral options:nil];
-    }
+//    }
 }
 
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
-    NSLog(@">>> connect to peripheral name is %@", peripheral.name);
+    PBLog(@">>> connect to peripheral name is %@", peripheral.name);
     [central stopScan];
     [peripheral setDelegate:self];
     [peripheral discoverServices:nil];
 }
 
 - (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error {
-    NSLog(@">>> disconnect to peripheral name is %@, error is %@", peripheral.name, error.localizedDescription);
+    PBLog(@">>> disconnect to peripheral name is %@, error is %@", peripheral.name, error.localizedDescription);
 }
 
 - (void)centralManager:(CBCentralManager *)central didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error {
-    NSLog(@">>> connect to peripheral failed name is %@, error is %@", peripheral.name, error.localizedDescription);
+    PBLog(@">>> connect to peripheral failed name is %@, error is %@", peripheral.name, error.localizedDescription);
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error {
     if (error) {
-        NSLog(@"%@", error.localizedDescription);
+        PBLog(@"%@", error.localizedDescription);
         return;
     }
     for (CBService *service in peripheral.services) {
-        NSLog(@"%@", service.UUID);
+        PBLog(@"%@", service.UUID);
         [peripheral discoverCharacteristics:nil forService:service];
     }
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error {
     if (error) {
-        NSLog(@">>>Discovered services for %@ with error: %@", peripheral.name, [error localizedDescription]);
+        PBLog(@">>>Discovered services for %@ with error: %@", peripheral.name, [error localizedDescription]);
         return;
     }
 
     for (CBCharacteristic *characteristic in service.characteristics) {
-        NSLog(@"service:%@ 的 Characteristic: %@",service.UUID,characteristic.UUID);
+        PBLog(@"service:%@ 的 Characteristic: %@",service.UUID,characteristic.UUID);
         [peripheral readValueForCharacteristic:characteristic];
         [peripheral discoverDescriptorsForCharacteristic:characteristic];
     }
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
-    NSLog(@"characteristic uuid:%@  value:%@",characteristic.UUID,characteristic.value);
+    PBLog(@"characteristic uuid:%@  value:%@",characteristic.UUID,characteristic.value);
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverDescriptorsForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
-    NSLog(@"characteristic uuid:%@",characteristic.UUID);
+    PBLog(@"characteristic uuid:%@",characteristic.UUID);
     for (CBDescriptor *descriptor in characteristic.descriptors) {
-        NSLog(@"Descriptor uuid:%@",descriptor.UUID);
+        PBLog(@"Descriptor uuid:%@",descriptor.UUID);
     }
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForDescriptor:(CBDescriptor *)descriptor error:(NSError *)error {
-    NSLog(@"characteristic uuid:%@  value:%@",[NSString stringWithFormat:@"%@",descriptor.UUID],descriptor.value);
+    PBLog(@"characteristic uuid:%@  value:%@",[NSString stringWithFormat:@"%@",descriptor.UUID],descriptor.value);
 }
 
 /*

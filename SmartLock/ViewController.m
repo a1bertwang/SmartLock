@@ -29,8 +29,8 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSString *str = @"abcde001011";
     NSString *res1 = [Tools cryptUseDES:str key:@"" operation:kCCEncrypt];
-    NSLog(@"%@",res1);
-    NSLog(@"%@", [Tools cryptUseDES:res1 key:@"" operation:kCCDecrypt]);
+    PBLog(@"%@",res1);
+    PBLog(@"%@", [Tools cryptUseDES:res1 key:@"" operation:kCCDecrypt]);
     [self performSegueWithIdentifier:@"qqq" sender:self];
 }
 
